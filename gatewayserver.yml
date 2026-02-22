@@ -1,11 +1,12 @@
 server:
-  port: 8072
+  port: 8071
 
 eureka:
   instance:
     preferIpAddress: true
+
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: "http://localhost:8070/eureka/"
+      defaultZone: http://bank.local.eurekaserver:8761/eureka/
